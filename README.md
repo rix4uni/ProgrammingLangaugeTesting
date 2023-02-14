@@ -59,6 +59,7 @@ sys     1m34.644s
   <summary>Sending 1000 Resquests ==>> RequestCount</summary>
   
   ```
+Sending 1000 Resquests ==>> RequestCount
 ## c
 gcc main.c -o main && time ./main && rm -rf main
 
@@ -67,29 +68,35 @@ g++ main.cpp -o main && time ./main && rm -rf main
 
 ## java
 time java main.java
+real    2m8.473s
+user    0m20.570s
+sys     0m4.449s
 
 ## javascript
 time node main.js
+real    0m18.034s
+user    0m2.086s
+sys     0m0.310s
 
 ## go 
 time go run main.go
-real    0m43.413s
-user    0m1.432s
-sys     0m1.366s
+real    0m59.215s
+user    0m0.693s
+sys     0m1.519s
 
 ## rust
 rustc main.rs && time ./main && rm -rf main
 
 ## python3
 time python3 main.py
-real    2m3.296s
-user    0m57.251s
-sys     0m0.648s
+real    2m44.135s
+user    0m55.205s
+sys     0m0.770s
 
 ## bash
 chmod +x main.sh && time ./main.sh
-real    2m1.273s
-user    0m47.857s
-sys     0m3.885s
+real    2m49.818s
+user    0m48.051s
+sys     0m3.393s
   ```
 </details>
