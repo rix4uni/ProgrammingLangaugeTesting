@@ -1,8 +1,9 @@
-const fetch = require('node-fetch');
+const https = require('https');
 
 const url = "https://www.dell.com";
 
 for (let i = 0; i < 1000; i++) {
-  fetch(url)
-    .then(response => console.log(response.status));
+    https.get(url, (res) => {
+        console.log(res.statusCode);
+    });
 }
