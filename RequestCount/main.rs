@@ -1,12 +1,7 @@
-use reqwest::blocking::get;
+use std::error::Error;
 
-fn main() -> Result<(), reqwest::Error> {
-    let url = "https://www.dell.com";
-    
-    for _ in 0..1000 {
-        let response = get(url)?;
-        println!("{}", response.status());
-    }
-    
+fn main() -> Result<(), Box<dyn Error>> {
+    let resp = reqwest::blocking::get("https://httpbin.org/ip")?.text()?;
+    println!("{:#?}", resp);
     Ok(())
 }
