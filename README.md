@@ -41,8 +41,8 @@ real    1m28.775s
 user    0m2.317s
 sys     0m30.410s
 
-## python3
-time python3 main.py
+## python3 & pypy3
+time python3 main.py or time pypy3 main.py
 real    1m38.383s
 user    0m19.220s
 sys     1m19.150s
@@ -87,8 +87,8 @@ sys     0m1.519s
 ## rust
 rustc main.rs && time ./main && rm -rf main
 
-## python3
-time python3 main.py
+## python3 & pypy3
+time python3 main.py or time pypy3 main.py
 real    2m44.135s
 user    0m55.205s
 sys     0m0.770s
